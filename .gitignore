@@ -1,0 +1,13 @@
+pom.xml
+*jar
+/lib/
+/classes/
+.lein-deps-sum
+.DS_Store
+.idea
+*iml
+*iws
+*ipr
+*csv
+*xls
+*xlsx
