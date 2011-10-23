@@ -1,6 +1,6 @@
 # sample
 
-FIXME: write description
+Leftronic api for clojure
 
 ## Usage
 
@@ -8,6 +8,6 @@ FIXME: write
 
 ## License
 
-Fractal Media *Software Confidencial*
+Copyright (C) 2010 Fractal Medis
 
-El uso no autorizado de este software implica que acepta pagar a Fractal Media S.A. de C. V. la cantidad de 100,000,000 USD por dia de uso por m√°quina.
+Distributed under the Eclipse Public License, the same as Clojure.
