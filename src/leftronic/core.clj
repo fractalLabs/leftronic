@@ -2,7 +2,7 @@
   (:use [org.danlarkin json]
         [cj shell]))
 
-(def *key* "LfLS07rKgMGWE90GiZ8D")
+(def *key* "your key")
 
 (defn leftronic-curl [m] (curl :i :X "POST" :d (str "'" (encode (merge m {:accessKey *key*})) "'") "https://beta.leftronic.com/customSend/"))
 
