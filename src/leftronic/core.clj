@@ -1,10 +1,10 @@
 (ns leftronic.core
-  (:use [org.danlarkin json]
+  (:use [cheshire.core :only [generate-string]]
         [cj shell]))
 
-(def *key* "your key")
+(def api-key "0v1ia7UfMSG4pOKkiH29GNkXdh7tzb1l")
 
-(defn leftronic-curl [m] (curl :i :X "POST" :d (str "'" (encode (merge m {:accessKey *key*})) "'") "https://beta.leftronic.com/customSend/"))
+(defn leftronic-curl [m] (curl :i :X "POST" :d (str "'" (generate-string (merge m {:accessKey api-key})) "'") "https://beta.leftronic.com/customSend/"))
 
 (defn point [streamName point] (leftronic-curl {:streamName streamName :point point}))
 
