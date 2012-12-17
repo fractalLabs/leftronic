@@ -1,7 +1,6 @@
-(ns leftronic.test.server
+(ns leftronic.test.core
     (:use [leftronic.core])
-    (:use [fm util])
     (:use [clojure.test]))
 
-(deftest carga-todos
-	  (is (false-on-exception carga-nss)))
+(deftest fake-test
+  (is true))
